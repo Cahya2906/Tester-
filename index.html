@@ -27,10 +27,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: opacity 3.5s ease-in-out;
+  transition: opacity 3s ease-in-out; /* fade halus 3 detik */
   z-index: -2;
   opacity: 0;
-  filter: brightness(0.95) contrast(1.05); /* 🌄 efek cinematic halus */
+  filter: brightness(0.95) contrast(1.05);
     }
     #bg1 { opacity: 1; }
     .overlay {
@@ -292,16 +292,19 @@
        Content arrays
        --------------------------- */
     const messages = [
-      "Hai Aida Rahma Putri 🎂✨",
-      "Selamat ulang tahun yaa! 🥳",
-      "Semoga sehat selalu dan panjang umur 🙌",
-      "Banyak rezeki & dimudahkan semua urusan 🌸",
-      "Jangan lupa bahagia terus 😁",
-      "Semoga makin sukses ke depannya 💪",
-      "Pokoknya doa terbaik buatmu hari ini 🎉",
-      "Happy Birthday, Aida Rahma Putri! 🎂🎊"
-    ];
-
+  "Hai Aida Rahma Putri 😆",
+  "Selamat ulang tahun bocil dewasa 🎂✨",
+  "Semoga makin banyak hal random yang bikin kamu ketawa hari ini 😂",
+  "Semoga makin waras, meski kayaknya udah gak mungkin 😜",
+  "Makin kuat, makin santai, makin cuek sama omongan orang 💪",
+  "Dan semoga rezeki kamu lancar, biar bisa traktir aku juga *hehe* 🍕",
+  "Pokoknya semoga kamu bahagia tanpa syarat, kayak nasi padang yang gak pernah salah🍛",
+  "Oh iya... Semoga moodyan kamu mulai pensiun, biar gak ada lagi yang jadi korban emosi tiba-tiba 🤣",
+  "Tetep absur tapi ngangenin, itu ciri khas kamu 💖",
+  "Udah ah, kebanyakan doa bagus takut kamu gak kuat jadi perfect 🤣",
+  "Sekarang waktunya senyum — bukan karena hidup sempurna, tapi karena kue-nya mahal gak ya😭",
+  "Happy birthday Aidaaa~ 🎉🎂🎈"
+];
     const backgrounds = [
       'background1.png','background2.png','background3.png','background4.jpg','background5.jpg','background6.jpg','background7.jpg','background8.png'
     ];
@@ -505,7 +508,7 @@
         startFallingItems();
 
         // 🌈 Mulai ganti background tiap 2 detik
-        bgInterval = setInterval(changeBackground, 7000); // 🌅 ganti tiap 7 detik
+        bgInterval = setInterval(changeBackground, 5000); // 🌄 ganti background tiap 5 detik
 
         // ✨ Overlay putih fade in & out
         setTimeout(() => {

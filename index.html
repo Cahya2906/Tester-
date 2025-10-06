@@ -22,14 +22,15 @@
       overflow-x: hidden;
     }
     .bg {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transition: opacity 1s ease;
-      z-index: -2;
-      opacity: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 3.5s ease-in-out;
+  z-index: -2;
+  opacity: 0;
+  filter: brightness(0.95) contrast(1.05); /* 🌄 efek cinematic halus */
     }
     #bg1 { opacity: 1; }
     .overlay {
@@ -504,7 +505,7 @@
         startFallingItems();
 
         // 🌈 Mulai ganti background tiap 2 detik
-        bgInterval = setInterval(changeBackground, 2000);
+        bgInterval = setInterval(changeBackground, 7000); // 🌅 ganti tiap 7 detik
 
         // ✨ Overlay putih fade in & out
         setTimeout(() => {
